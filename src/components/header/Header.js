@@ -1,7 +1,7 @@
 import React from 'react'
-
+import Navigation from './Navigation'
 export default function Header() {
   return (
-    <div>Header</div>
+    <div> <Navigation/> </div>
   )
 }
