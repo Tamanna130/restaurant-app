@@ -12,7 +12,9 @@ export default class Menu extends Component {
     return (
       <div className='container'>
         <div className="row">
+            <div className='col-sm-6'>
             {menu}
+            </div>
         </div>
       </div>
     )

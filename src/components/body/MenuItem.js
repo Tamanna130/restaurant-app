@@ -1,10 +1,17 @@
 import React from 'react'
-
+import { Card, CardBody, CardImg, CardImgOverlay,CardTitle} from 'reactstrap'
 export default function MenuItem(props) {
   return (
     
-            <div className="col-sm-4">
-            {props.dish.name}
+            <div >
+              <Card style = {{margin:'10px'}}>
+                <CardBody>
+                  <CardImg width='100%' alt={props.dish.name} src= {props.dish.image}/>
+                  <CardImgOverlay>
+                    <CardTitle>{props.dish.name}</CardTitle>
+                  </CardImgOverlay>
+                </CardBody>
+              </Card>
             </div>
         
    
