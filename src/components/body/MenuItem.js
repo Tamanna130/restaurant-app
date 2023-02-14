@@ -8,7 +8,9 @@ export default function MenuItem(props) {
                 <CardBody>
                   <CardImg width='100%' alt={props.dish.name} src= {props.dish.image}/>
                   <CardImgOverlay>
-                    <CardTitle>{props.dish.name}</CardTitle>
+                    <CardTitle onClick={props.onDishSelect} style={{cursor: 'pointer'}}>
+                      {props.dish.name}
+                      </CardTitle>
                   </CardImgOverlay>
                 </CardBody>
               </Card>
